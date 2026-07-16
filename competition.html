@@ -4,8 +4,9 @@
 	<head>
 		<title>Compétition - La Madeleine Volley-ball et Vie Active</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/lmvbva.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="assets/css/lmvbva_V4.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body>
@@ -26,22 +27,29 @@
 
         </a>
 
-        <nav>
+<nav class="main-nav">
 
-            <ul>
+    <button class="menu-toggle"
+            type="button"
+            aria-label="Ouvrir le menu"
+            aria-expanded="false">
+        ☰
+    </button>
+
+    <ul class="nav-menu">
 
         <li><a href="index.html">Accueil</a></li>
-<li><a href="club.html">Le Club</a></li>
-<li><a href="formation.html">Formation</a></li>
-<li><a href="competition.html">Compétition</a></li>
-<li><a href="loisirs.html">Loisirs</a></li>
-<li><a href="partenaires.html">Partenaires</a></li>
-<li><a href="boutique.html">Boutique</a></li>
-<li><a href="infos-pratiques.html">Infos pratiques</a></li>
+        <li><a href="club.html">Le Club</a></li>
+        <li><a href="formation.html">Formation</a></li>
+        <li><a href="competition.html">Compétition</a></li>
+        <li><a href="loisirs.html">Loisirs</a></li>
+        <li><a href="partenaires.html">Partenaires</a></li>
+        <li><a href="boutique.html">Boutique</a></li>
+        <li><a href="infos-pratiques.html">Infos pratiques</a></li>
 
-            </ul>
+    </ul>
 
-        </nav>
+</nav>
 
     </div>
 
@@ -56,11 +64,17 @@
 
     <div class="container hero-content">
 
-       <h1>COMPÉTITION </h1>
+        <h1>COMPÉTITION</h1>
 
         <p>Grandir ensemble. Performer ensemble.</p>
 
     </div>
+
+</section>
+
+<section class="section-divider-wrapper">
+
+    <div class="section-divider"></div>
 
 </section>
 
@@ -73,15 +87,18 @@
             <h2>NOTRE VISION</h2>
 
             <p>
-                Au LMVBVA, la compétition est avant tout un formidable outil
+                La compétition est avant tout un formidable outil
                 d'apprentissage. Chaque rencontre, chaque entraînement et chaque
                 saison doivent permettre à nos joueurs de progresser
                 individuellement et collectivement.
             </p>
 
             <p>
-                Notre projet sportif repose sur l'exigence, le plaisir de jouer,
-                le respect et l'envie permanente de faire grandir le club.
+                La compétition commence dès les M11, puis nous engageons des équipes dans chaque 
+                catégorie de M13 à M21 inclus, en féminines et masculins. Notre équipe 1 féminine 
+                évolue en Pré Nationale, notre équipe 2 en Régionale 1, chez les masculines, notre
+                équipe 1 joue en Régionale 1 et notre équipe 2 en Départementale. Enfin le club engagement
+                aussi 2 équipes en Compèt Lib.
             </p>
 
         </div>
@@ -110,10 +127,10 @@
             <div class="valeurs-header">
 
                 <p class="section-intro">
-                    Parmi l'ensemble des valeurs portées par le sport et la vie associative,
+                    Parmi les valeurs portées par le sport et la vie associative,
                     La Madeleine Volley-ball met particulièrement l'accent sur huit principes
-                    qui structurent son projet, guident son action et accompagnent chaque
-                    licencié dans sa progression individuelle et collective.
+                    qui structurent son projet et accompagnent chaque licencié dans sa progression.
+                
                 </p>
 
             </div>
@@ -121,7 +138,7 @@
             <div class="valeurs-image">
 
                 <img
-                    src="images/nos-valeurs-lmvbva.png"
+                    src="images/les-valeurs-lmvbva.png"
                     alt="Les huit valeurs de La Madeleine Volley-ball"
                 >
 
@@ -145,17 +162,7 @@
 
     <div class="container">
 
-        <div class="staff-heading">
-
-            <h2>L'ENCADREMENT</h2>
-
-            <p>
-                Notre projet sportif est porté par une équipe technique investie,
-                qui accompagne chaque licencié dans sa progression et chaque équipe
-                dans la réalisation de ses objectifs.
-            </p>
-
-        </div>
+   
 
         <h3 class="staff-title">NOTRE ÉQUIPE TECHNIQUE</h3>
 
@@ -163,7 +170,7 @@
         <article class="technical-director">
 
             <img
-                src="images/erik-ci.jpg"
+                src="images/Erik.jpg"
                 alt="Directeur technique du LMVBVA"
             >
 
@@ -174,7 +181,8 @@
             <div class="director-description">
 
                 <p>
-                    Erik possède une très vaste expérience de près de 40 ans à tous les niveaux, de la départementale à la Ligue professionnelle féminine, 
+                    Erik a la responsabilité de mener le programme de formation des jeunes et de formation des entraîneurs.
+				    IL possède une très vaste expérience de près de 40 ans à tous les niveaux, de la départementale à la Ligue professionnelle féminine, 
 					toutes les catégories d'âge, à l'internationale notamment aux Etats Unis et en Grande Bretagene et en formation de cadres en France 
 					et en Grande Bretagne.
                 </p>
@@ -195,88 +203,87 @@
             <article class="coach-card">
                 <img src="images/coach1.jpg" alt="Coach du LMVBVA">
                 <h4>Thibaut Chantry</h4>
-                <span>Entraîneur Pré Nat & R1 Féminine, Académie et Ecole de Volley</span>
+                <span>Pré Nationale & R1 Féminine, Académie et Ecole de Volley</span>
                 <p>
-                    DEJEPS Volley-ball.<br>
-                    Quelques lignes de présentation du parcours,
-                    de l'expérience et du rôle au sein du club.
+                    BPJEPS APT, DRE1.<br>
+                  Thibaut possède une très vaste expérience de l'école de Volley à la Pré- nationale filles et garçons 
+                  depuis plus de 20 ans. Thibaut possède un des meilleurs palmarès de la région.
+
                 </p>
             </article>
 
             <article class="coach-card">
                 <img src="images/coach2.jpg" alt="Coach du LMVBVA">
                 <h4>Wail Fattat</h4>
-                <span>Entraîneur R1 masculine, Académie</span>
+                <span>R1 masculine, Académie</span>
                 <p>
-                    Diplôme / qualification.<br>
-                    Quelques lignes de présentation du parcours,
-                    de l'expérience et du rôle au sein du club.
+                    DEJEPS Volley-ball, BPJEPS APST, DRE1<br>
+                  Recruté au club en 2024, Wail possède une solide expérience en 
+                  Pré Nationale et en Jeunes, il possède les qualités d'un coach très prometteur.
                 </p>
             </article>
 
             <article class="coach-card">
-                <img src="images/coach3.jpg" alt="Coach du LMVBVA">
+                <img src="images/Celso.jpg" alt="Coach du LMVBVA">
                 <h4>Celso Assumpcao</h4>
                 <span>Séniors B masculine, Académie</span>
                 <p>
-                    Diplôme / qualification.<br>
-                    Quelques lignes de présentation du parcours,
-                    de l'expérience et du rôle au sein du club.
+                    EF2<br>
+                Originaire du Brésil, Celso va apporter toute son expérience accumulée dans son pays
+                et à l'international notamment aux USA et en Italie depuis plus de 40 ans.
                 </p>
             </article>
 
             <article class="coach-card">
                 <img src="images/coach4.jpg" alt="Coach du LMVBVA">
-                <h4>Nom Prénom</h4>
-                <span>Entraîneur M18 Masculins</span>
+                <h4>Léone Fuapau</h4>
+                <span>Pré Nationale et R1 féminines</span>
                 <p>
                     Diplôme / qualification.<br>
-                    Quelques lignes de présentation du parcours,
-                    de l'expérience et du rôle au sein du club.
+                  Léone possède une grande réputation dans la région pour la qualité de sa formation
+                et son expérience chez les jeunes et les équipes séniors
                 </p>
             </article>
 
             <article class="coach-card">
                 <img src="images/coach5.jpg" alt="Coach du LMVBVA">
-                <h4>Nom Prénom</h4>
-                <span>Entraîneur M15 Féminines</span>
+                <h4></h4>
+                <span></span>
                 <p>
-                    Diplôme / qualification.<br>
-                    Quelques lignes de présentation du parcours,
-                    de l'expérience et du rôle au sein du club.
+                    <br>
+                    
                 </p>
             </article>
 
             <article class="coach-card">
-                <img src="images/coach6.jpg" alt="Coach du LMVBVA">
-                <h4>Nom Prénom</h4>
-                <span>Entraîneur M15 Masculins</span>
+                <img src="images/matheo.jpg" alt="Coach du LMVBVA">
+                <h4>Mathéo Lesage</h4>
+                <span>Académie féminine, Baby Volley</span>
                 <p>
-                    Diplôme / qualification.<br>
-                    Quelques lignes de présentation du parcours,
-                    de l'expérience et du rôle au sein du club.
+                    DRE1 CIVB<br>
+                    Ancien service civique au club et issu du programme de Formation, Mathéo possède 
+                    plusieurs années d'expérience dans l'encadrement des équipes de jeunes.
                 </p>
             </article>
 
             <article class="coach-card">
-                <img src="images/coach7.jpg" alt="Coach du LMVBVA">
-                <h4>Nom Prénom</h4>
-                <span>Entraîneur Jeunes</span>
+                <img src="images/florian.jpg" alt="Coach du LMVBVA">
+                <h4>Florian Sense</h4>
+                <span>Académie masculine</span>
                 <p>
-                    Diplôme / qualification.<br>
-                    Quelques lignes de présentation du parcours,
-                    de l'expérience et du rôle au sein du club.
+                    <br>
+                   Egalement Service civique au club, en 25/26, Florien entame sa carrière 
+                   de coach après une année d'encadrement à tous les niveaux.
                 </p>
             </article>
 
             <article class="coach-card">
                 <img src="images/coach8.jpg" alt="Coach du LMVBVA">
-                <h4>Nom Prénom</h4>
+                <h4></h4>
                 <span>Entraîneur Jeunes</span>
                 <p>
-                    Diplôme / qualification.<br>
-                    Quelques lignes de présentation du parcours,
-                    de l'expérience et du rôle au sein du club.
+                    <br>
+                    
                 </p>
             </article>
 
@@ -343,7 +350,7 @@
                     <li><a href="loisirs.html">Loisirs</a></li>
                     <li><a href="partenaires.html">Partenaires</a></li>
                     <li><a href="boutique.html">Boutique</a></li>
-                    <li><a href="infopratiques.html">Infos pratiques</a></li>
+                    <li><a href="infos-pratiques.html">Infos pratiques</a></li>
 
                 </ul>
 
@@ -422,5 +429,6 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	</body>
+	
+        </body>
 </html>
