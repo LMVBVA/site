@@ -2,15 +2,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const sections = document.querySelectorAll("section");
 
-    
-
     const observer = new IntersectionObserver((entries) => {
 
         entries.forEach(entry => {
 
             if (entry.isIntersecting) {
 
-                entry.target.classList.add("visible");
+                requestAnimationFrame(() => {
+                    requestAnimationFrame(() => {
+                        entry.target.classList.add("visible");
+                    });
+                });
+
                 observer.unobserve(entry.target);
 
             }
@@ -18,7 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
     }, {
-        threshold: 0.20
+        threshold: 0,
+        rootMargin: "0px 0px -10% 0px"
     });
 
     sections.forEach(section => {
@@ -29,7 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
-
 /*====================================
 COMPTEURS ANIMÉS
 ====================================*/
