@@ -803,6 +803,18 @@ transition:.3s;
     box-shadow:0 18px 35px rgba(0,0,0,.15);
 
 }
+
+.logo-partenaire img{
+
+    max-width:85%;
+    max-height:75px;
+
+    width:auto;
+    height:auto;
+
+    object-fit:contain;
+
+}
 .partenaires .button{
 
     margin-top:40px;
@@ -1470,11 +1482,13 @@ linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)),
 
     }
 
-    .history-card img{
+   .history-card img{
 
-        height:260px;
+    height:260px;
 
-    }
+    object-position:top;
+
+}
 
     .history-title{
 
@@ -2425,7 +2439,7 @@ grid-template-columns:1fr;
 }
 
 .partner-logo-card{
-    min-height:160px;
+    min-height:200px;
     padding:25px;
     background:#ffffff;
     border-radius:16px;
@@ -2436,8 +2450,8 @@ grid-template-columns:1fr;
 }
 
 .partner-logo-card img{
-    max-width:100%;
-    max-height:110px;
+    max-width:95%;
+    max-height:170px;
     object-fit:contain;
 }
 /*================ DEVENIR PARTENAIRE =================*/
@@ -3685,5 +3699,83 @@ LOGOS PARTENAIRES
     transform:translateY(-8px);
 
     box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+}
+/*====================================
+APPARITION AU SCROLL
+Version 1 - Définitive
+====================================*/
+
+.fade-section{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+    will-change:opacity, transform;
+
+}
+
+.fade-section.visible{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/*====================================
+RETOUR EN HAUT
+====================================*/
+
+#backToTop{
+
+    position:fixed;
+
+    right:25px;
+    bottom:25px;
+
+    width:52px;
+    height:52px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#F2C300;
+    color:#111111;
+
+    font-size:1.4rem;
+    font-weight:800;
+
+    cursor:pointer;
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:
+        opacity .25s ease,
+        transform .25s ease;
+
+    transform:translateY(15px);
+
+    z-index:999;
+
+}
+
+#backToTop.show{
+
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+
+}
+
+#backToTop:hover{
+
+    transform:translateY(-3px);
 
 }

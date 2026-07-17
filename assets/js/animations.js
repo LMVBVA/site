@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
     }, {
-        threshold: 0.15
+        threshold: 0.20
     });
 
     sections.forEach(section => {
@@ -80,5 +80,31 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     counters.forEach(counter => observer.observe(counter));
+
+});
+/*====================================
+RETOUR EN HAUT
+====================================*/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const button = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", () => {
+
+        button.classList.toggle("show", window.scrollY > 400);
+
+    });
+
+    button.addEventListener("click", () => {
+
+        window.scrollTo({
+
+            top:0,
+            behavior:"smooth"
+
+        });
+
+    });
 
 });
