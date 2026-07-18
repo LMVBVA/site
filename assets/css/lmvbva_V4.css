@@ -265,6 +265,15 @@ background-position:center;
     font-size:1.18rem;
     line-height:1.55;
 }
+@media screen and (max-width:768px) {
+
+    .hero {
+        background-image: url("../../images/header-mobile.png");
+        background-position: center;
+        background-size: cover;
+    }
+
+}
 /* ================= BOUTONS ================= */
 
 .button{
@@ -1824,7 +1833,7 @@ grid-template-columns:1fr;
 
     font-size:1.15rem;
 
-    text-align:justify;
+    text-align:left;
 
 }
 
