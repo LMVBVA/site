@@ -3805,3 +3805,12 @@ RETOUR EN HAUT
     transform: translateY(-2px);
     text-decoration: none;
 }
+/* Devenir partenaire en fond noir */
+.become-partner {
+    background: #111111 !important;
+}
+
+.become-partner h2,
+.become-partner p {
+    color: #ffffff !important;
+}
